@@ -1,0 +1,8 @@
+.leftbox {
+    float: left;
+    width: 50%;
+    border-right: black;
+  }
+table,th,tr,td{
+    border: 1px solid black;
+}
