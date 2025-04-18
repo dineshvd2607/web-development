@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testslide</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;  
+            align-items: center;
+            border:5px;
+            box-shadow: 0 2px 6px;
+            padding: 20px 20px;
+            font-size: x-large;
+            }
+
+
+        nav ul{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            }
+
+        .middle{
+            text-align: left;
+            font-size: xx-large;
+        }
+
+
+        .download{
+            background-color: orange;
+            color:black;
+        }
+
+        .home{
+            background-image: url("back.jpg");
+            display: flex;
+            flex: 100%;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+        }
+
+        .downone{
+            text-align: center;
+            font-size: large;
+        }
+
+        .photo{
+            height: 300px;
+            width: auto;
+            margin-right: 30px;
+            position: relative;
+            top: 4px;
+            left: 1200px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .item:nth-child(1),
+        .item:nth-child(2),
+        .item:nth-child(3) {
+            flex-grow: 1;
+            border:5px;
+            box-shadow: 0 2px 6px;
+        }
+
+        .item:nth-child(4) {
+            width: auto;
+            height: auto;
+            flex-grow: 1;
+            border:5px;
+            box-shadow: 0 2px 6px;
+        }
+
+        h1{
+            font-weight: bold;
+        }
+
+        .last{
+            background-image: url(back.jpg);
+            display: flex;
+            flex: 100%;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+        }
+
+        .leftlast{
+                flex:50%;
+                padding-left: 100px;
+                padding-top: 50px;
+                padding-bottom: 100px;
+                padding-right: 100px;
+                height: 400px;                
+        }
+
+        .lastphoto{
+            height: 300px;
+            width: auto;
+            margin-left: 20px;
+            position: relative;
+            left: 10px;
+        }
+
+        .rightlast{
+                flex:50%;
+                padding-left: 10px;
+                padding-top: 50px;
+                padding-bottom: 100px;
+                padding-right: 100px;
+                height: 400px;
+        }
+
+        .lastlast{
+            display: flex;
+            flex: 100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topleft">FOLIO</div>
+        <div class="topcenter">
+            <nav>
+            <ul>
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#Services">SERVICES</a></li>
+                <li><a href="#Portfolio">PORTFOLIO</a></li>
+                <li><a href="#Blog">BLOG</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="topright">
+            <h4>Have any Queries</h4>
+            <h4>+91 8883116090</h4>
+        </div>
+    </header>    
+
+    <section class="home">
+        <div class="leftmiddle">
+            <p>NICE TO MEET YOU</p>
+            <h1>Hi, I'm DINESH</h1>
+            <h1>UI & UX Designer</h1>
+            <p>Hey are looking for a designer to build your brand and grow your business? Let's shake hands with me</p>
+            <button class="download">Download My CV</button>
+        </div>
+
+        <div class="rightmiddle">
+            <img class="photo"src="IMG_20250214_184150_737.webp">
+        </div>
+    </section>
+
+    <section class="homedown">
+        <div class="downone">
+            <p>MY SERVICES</p>
+            <h1>WHAT WE DO</h1>
+        </div>
+        <div class="container">
+            <div class="item">
+                <img src="burger.jpg" height="100px" width="auto">
+                <h1>BRAND STRATEGY</h1>
+                <ul>
+                    <li>Android/IOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboard Onboarding</li>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="burger.jpg" height="100px" width="auto">
+                <h1>UI & UX Design</h1>
+                <ul>
+                    <li>Android/IOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboard Onboarding</li>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="burger.jpg" height="100px" width="auto">
+                <h1>Website Design</h1>
+                <ul>
+                    <li>Android/IOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboard Onboarding</li>
+                </ul>
+            </div>
+            <div class="item">
+                <img src="burger.jpg" height="100px" width="auto">
+                <h1>Software Design</h1>
+                <ul>
+                    <li>Android/IOS App UI</li>
+                    <li>Website UI Design</li>
+                    <li>UI Interaction Design</li>
+                    <li>Website Prototyping</li>
+                    <li>Dashboard Onboarding</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <section class="last">
+        <div class="leftlast">
+            <img class="lastphoto"src="IMG_20250214_184150_737.webp">
+        </div>
+        <div class="rightlast">
+            <p>ABOUT ME</p>
+            <h1>LOOKING FOR CREATIVE</h1>
+            <h1>DESIGNER? I CAN HELP YOU!</h1>
+            <p>I have been designing sites and apps for 12 years and I know for sure the main trends and directions of modern design I have been a visionery and a reliable software engineering partner for world-class brands</p>
+            <ul>
+                <li>High Quality Service</li>
+                <li>Fast Time Delivery</li>
+                <li>Best Price in Marketplace</li>
+                <li>Unique Design Concept</li>
+            </ul>
+            <div class="lastlast">
+                <div>
+                    <button class="download">Hire Me Now</button>
+                </div>
+                <div>
+                    Follow Me On: Facebook Instagram Twitter LinkedIn
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
