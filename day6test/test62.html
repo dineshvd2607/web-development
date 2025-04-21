@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      margin: 0;
+      background:white;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      font-size: x-large;
+    }
+
+    .container{
+      padding: 20px;
+      max-width: 360px;
+      box-shadow: 0 10px 30px black;
+      background: white;
+    }
+
+    .lastadded {
+      margin-top: 20px;
+    }
+
+    .lastaddeditems {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      overflow-x: auto;
+    }
+
+    .taskpill {
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid black;
+      background: white;
+      white-space: nowrap;
+      font-size: 0.8rem;
+    }
+
+    .addsub{
+      width: 150px;
+      margin-top: 20px;
+      padding: 8px;
+      border: 10px;
+      border-radius: 20px;
+      background-color: blue;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .last{
+        text-align: center;
+    }
+
+    .summa{
+        text-align: end;
+    }
+
+    .addtask{
+      width: 100px;
+      margin-top: 20px;
+      padding: 8px;
+      border: 10px;
+      border-radius: 20px;
+      background-color: red;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .clear{
+      width: 100px;
+      margin-top: 20px;
+      padding: 8px;
+      border: 10px;
+      border-radius: 20px;
+      background-color: grey;
+      color: white;
+      font-size: 1rem;
+    }
+
+    p{
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        border:5px;
+        box-shadow: 0 1px 5px;
+        padding: 20px 20px;
+        font-size: small;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create New Task</h1>
+        <hr>
+        <div>Main Task Name: <br>
+        <input type="text" value="UI/UX App Design">
+        </div>
+        <br>
+
+        <div>Due Date: <br>
+        <input type="datetime">
+        </div>
+
+        <section class="lastadded">
+            <h3>Choose Priority</h3>
+            <div class="lastaddeditems">
+              <div class="taskpill">High</div>
+              <div class="taskpill">Medium</div>
+              <div class="taskpill">Low</div>
+            </div>
+        </section>
+        <br>
+
+        <div>Sub-Task name <br>
+            <input type="text" value="Prototyping">
+        </div><br>
+
+        <div>Sub-Task name <br>
+            <input type="text" value="Animate the logo">
+        </div>
+
+        <div class="summa">
+        <button class="addsub">Add Sub-task</button>
+    </div>
+        <br>
+
+        <div>Description
+            <p>First i have to animate the logo and later prototyping my design.It's very important.</p>
+        </div>
+        <br>
+
+        <div class="last">
+            <button class="addtask">Add task</button>
+            <button class="clear">Clear</button>
+        </div>
+
+    </div>
+</body>
+</html>

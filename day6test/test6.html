@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager UI</title>
+  <style>
+    body {
+      margin: 0;
+      background:white;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .container{
+      padding: 20px;
+      max-width: 360px;
+      box-shadow: 0 10px 30px black;
+      background: white;
+    }
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
+    .Hello h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .Hello span {
+      color: red;
+    }
+
+    .Hello p {
+      margin: 2px 0 0;
+      font-size: 0.8rem;
+      color:grey;
+    }
+
+    .menu-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .searchbar {
+      margin-top: 15px;
+    }
+
+    .searchbar input {
+      width: 90%;
+      padding: 10px;
+      border-radius: 15px;
+      border: 1px solid black;
+    }
+
+    .lastadded {
+      margin-top: 20px;
+    }
+
+    .lastaddeditems {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      overflow-x: auto;
+    }
+
+    .taskpill {
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: 1px solid black;
+      background: white;
+      white-space: nowrap;
+      font-size: 0.8rem;
+    }
+
+    .tasklist {
+      margin-top: 20px;
+    }
+
+    .taskcard {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 10px 15px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px black;
+      margin-bottom: 15px;
+      gap: 15px;
+    }
+
+    .taskcard h4 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .taskcard p {
+      margin: 2px 0 0;
+      font-size: 0.75rem;
+      color: grey;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 50%;
+      border-color: black;
+      color:black;
+      min-width: 36px;
+      text-align: center;
+    }
+
+    .taskbtn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 20px;
+      background-color: blue;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./bulboff.png" alt="User" class="avatar" />
+
+
+      <div class="Hello">
+        <h2>Hello, <span>Damion</span></h2>
+        <p>Manage your tasks</p>
+      </div>
+
+      <div>
+        Menu
+      </div>
+    </header>
+
+    <div class="searchbar">
+      <input type="text" value="search"/>
+    </div>
+
+    <section class="lastadded">
+      <h3>Last added</h3>
+      <div class="lastaddeditems">
+        <div class="taskpill">Football Cup training drybling</div>
+        <div class="taskpill">UI/UX App Design</div>
+        <div class="taskpill">UI/UX App Design</div>
+      </div>
+    </section>
+
+    <section class="tasklist">
+      <h3>Tasks list</h3>
+      <div class="taskcard">
+        <span class="badge">75%</span>
+        <div>
+          <h4>UI/UX App Design</h4>
+          <p>3 tasks</p>
+        </div>
+      </div>
+
+      <div class="taskcard">
+        <span class="badge">75%</span>
+        <div>
+          <h4>UI/UX App Design</h4>
+          <p>3 tasks</p>
+        </div>
+      </div>
+
+      <div class="taskcard">
+        <span class="badge">75%</span>
+        <div>
+          <h4>View candidates' resumes</h4>
+          <p>32 tasks</p>
+        </div>
+      </div>
+
+      <div class="taskcard">
+        <span class="badge">75%</span>
+        <div>
+          <h4>Football Cup training Drybling</h4>
+          <p>3 tasks</p>
+        </div>
+      </div>
+    </section>
+
+    <button class="taskbtn">Create task</button>
+  </div>
+</body>
+</html>
