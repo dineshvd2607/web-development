@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .summa{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+        }
+        .container{
+            padding: 20px;
+            max-width: auto;
+            box-shadow: 0 10px 30px black;
+            background: white;
+            width: 30%;
+            height: auto
+        }
+
+        .container2{
+            padding: 20px;
+            max-width: auto;
+            box-shadow: 0 10px 30px black;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .head{
+            display: flex;
+            justify-content: space-between;
+        }
+        .red{
+            color: red;
+        }
+
+        .bb{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        table{
+            text-align: center;
+        }
+
+        td{
+            width: 400px;
+        }
+
+        .redred{
+         border-color: red;
+         color: red;
+         background-color: white;
+        }
+
+        button{
+            padding: 15px;
+        }
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="summa">
+
+    <div class="container">
+
+    <div class="top">
+    <h2>FILTERS</h2>
+    <h2 class="red">RESET ALL</h2>
+    </div><hr>
+
+    <div>
+    <h3>Quota</h3>
+    <label><input type="radio">General</label>
+    <label><input type="radio">Tatkal</label><br><br>
+    <label><input type="radio">Ladies</label>
+    <label><input type="radio">Lower Berth</label>
+    </div><br><hr>
+
+    <div>
+    <h3>Origin Station</h3>
+    <label><input type="checkbox">NZM</label>
+    <label><input type="checkbox">NDLS</label><br><br>
+    <label><input type="checkbox">DEE</label>
+    <label><input type="checkbox">SZN</label><br><br>
+    <label><input type="checkbox">ANDI</label>
+    </div><br><hr>
+
+    <div>
+    <h3>Destination Station</h3>
+    <label><input type="checkbox">MMCT</label>
+    <label><input type="checkbox">CSMT</label><br><br>
+    <label><input type="checkbox">PNVL</label>
+    <label><input type="checkbox">BDTS</label><br><br>
+    <label><input type="checkbox">LTT</label>
+    </div>
+
+    </div>
+
+    <div class="container2">
+
+        <div class="head">
+            <h2>Sort by:</h2>
+            <h2 class="red">Departure</h2>
+            <h2>Duration</h2>
+            <h2>Arrival</h2>
+        </div>
+
+
+        <div class="bottom">
+            <div class="bb">
+                <div>
+                    <h3>12904 - GOLDEN TEMPLE M</h3>
+                    <p>04:00 NZM -- 19H 35M -- 23:35 MMCT</p>
+                </div>
+                <div>
+                    <p> S M T W T F S</p>
+                    <p class="red">View Schedule</p>
+                </div>
+            </div><hr><br>
+
+            <div>
+                <nav>
+                    <a href="#2A" class="red">2A - Second AC</a><br>
+                    <a href="#3A">3A - Third AC</a><br>
+                    <a href="#SL">SL - Sleeper</a><br>
+                    <a href="#1A">1A - First AC</a><br>
+                </nav>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>Tue, 29 Apr</td>
+                        <td><p>RLWL22/WL17</p><p>41% Chance</p></td>
+                        <td><button>BOOK ₹2335</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tue, 29 Apr</td>
+                        <td><p>RLWL22/WL17</p><p>41% Chance</p></td>
+                        <td><button class="redred">BOOK ₹2335</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tue, 29 Apr</td>
+                        <td><p>RLWL22/WL17</p><p>41% Chance</p></td>
+                        <td><button>BOOK ₹2335</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tue, 29 Apr</td>
+                        <td><p>RLWL22/WL17</p><p>41% Chance</p></td>
+                        <td><button class="redred">BOOK ₹2335</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tue, 29 Apr</td>
+                        <td><p>RLWL22/WL17</p><p>41% Chance</p></td>
+                        <td><button>BOOK ₹2335</button></td>
+                    </tr>  
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>   
+</body>
+</html>
