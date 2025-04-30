@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .perusu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .container1{
+            width: 30%;
+            background-color: rgb(103, 103, 211);
+        }
+
+        .container2{
+            width: 69% ;
+            background-color: rgb(153, 224, 248);
+            position: relative;
+            margin: 1px;
+        }
+
+        .box{
+            margin: 5%;
+        }
+
+        .potti{
+            box-shadow: 0 1px 2px;
+            color: black;
+            width: 110px;
+            text-align: start;
+            background-color: rgb(160, 156, 240);
+            border-radius: 5px;
+            padding: 8px;
+            width: 95%;
+            font-size: large;
+        }
+
+        .foot{
+            box-shadow: 0 1px 2px;
+            border-color: white;
+            display: flex;
+            font-size: small;
+            width: 80%;
+            margin: 5%;
+        }
+        
+        .head{
+            margin: 5%;
+        }
+
+        .head2{
+            margin-left: 2%;
+            margin-right: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav{
+            margin-left: 2%;
+            display: flex;
+            gap: 25px;
+        }
+
+        .pottii2{
+            margin-left: 2%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .potti2{
+            position: relative;
+            box-shadow: 0 1px 2px;
+            color: black;
+            width: 30%;
+            text-align: start;
+            background-color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .mid{
+            margin-left: 2%;
+            margin-right: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foot2{
+            margin-left: 2%;
+            margin-right: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        table{
+            margin-left: 2%;
+            margin-right: 2%;
+            text-align: center;
+
+        }
+
+        td,th{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="perusu">
+        <div class="container1">
+
+        <div class="head"><h3>📦 Untitled UI</h3></div>
+
+        <div class="box">
+            <div class="potti">🏠 Home</div>
+            <div class="potti">🔔 Notification</div>
+            <div class="potti">📄 Projects</div>
+            <div class="potti">📃 Tasks</div>
+            <div class="potti">🕒 Reporting</div>
+            <div class="potti">👤 Users</div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <div class="box">
+            <div class="potti">🛎️ Notifications</div>
+            <div class="potti">☁️ Support</div>
+            <div class="potti">🎚️ Settings</div>
+        </div><br>
+
+        <div class="foot">
+            <img title="ss" src="./bulbon.png" height="80px" width="80px">
+            <h4>Frankie Sullivan<p>@frankie</p></h4>
+        </div>
+        </div>
+
+
+        <div class="container2">
+
+            <div class="head2">
+                <div><h2>Customers</h2></div>
+                <div><button>Import</button><button>+ Add Customer</button></div>
+            </div>
+
+            <div>
+                <nav>
+                    <a href="#overview">Overview</a>
+                    <a href="#table">Table</a>
+                    <a href="#listview">Listview</a>
+                    <a href="#segment">Segment</a>
+                    <a href="#custom">Custom</a>
+                </nav>
+            </div><br>
+
+            <div class="pottii2">
+            <div class="potti2">
+                <p>Total Customers</p>
+                <h2>2,420</h2>
+            </div>
+            <div class="potti2">
+                <p>Members</p>
+                <h2>1,210</h2>
+            </div>
+            <div class="potti2">
+                <p>Active Now</p>
+                <h2>316</h2>
+            </div>
+            </div><br>
+
+            <div class="mid">
+                <div>
+                    <button>All time X</button>
+                    <button>US, AU, +4</button>
+                    <button>More filters</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div><br>
+
+
+            <div class="tab">
+                <table>
+                    <tr>
+                        <th>Company</th>
+                        <th>Status</th>
+                        <th>About</th>
+                        <th>Users</th>
+                        <th>License Use</th>
+                        <th>Options</th>
+                    </tr>
+                    <tr>
+                        <td>Catalog</td>
+                        <td>Customer</td>
+                        <td><p>Content curating app</p><p>Brings all your new into one place</p></td>
+                        <td>+6</td>
+                        <td><input title="ss" type="range" min="0" max="5" value="1"></td>
+                        <td><button>delete</button><button>edit</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Catalog</td>
+                        <td>Customer</td>
+                        <td><p>Content curating app</p><p>Brings all your new into one place</p></td>
+                        <td>+6</td>
+                        <td><input title="ss" type="range" min="0" max="5" value="1"></td>
+                        <td><button>delete</button><button>edit</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Catalog</td>
+                        <td>Customer</td>
+                        <td><p>Content curating app</p><p>Brings all your new into one place</p></td>
+                        <td>+6</td>
+                        <td><input title="ss" type="range" min="0" max="5" value="1"></td>
+                        <td><button>delete</button><button>edit</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Catalog</td>
+                        <td>Customer</td>
+                        <td><p>Content curating app</p><p>Brings all your new into one place</p></td>
+                        <td>+6</td>
+                        <td><input title="ss" type="range" min="0" max="5" value="1"></td>
+                        <td><button>delete</button><button>edit</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Catalog</td>
+                        <td>Customer</td>
+                        <td><p>Content curating app</p><p>Brings all your new into one place</p></td>
+                        <td>+6</td>
+                        <td><input title="ss" type="range" min="0" max="5" value="1"></td>
+                        <td><button>delete</button><button>edit</button></td>
+                    </tr>
+                </table>  
+            </div><br>
+
+            <div class="foot2">
+                <div><button>Previous</button></div>
+                <div>Page 1 of 10</div>
+                <div><button>Next</button></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

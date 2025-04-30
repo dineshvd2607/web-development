@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maburo Flight Booking</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e6f0fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            height: 90%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 200px;
+            background: #f0f7ff;
+            padding: 20px;
+            
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+        }
+
+        .sidebar .settings {
+            margin-top: auto;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 16px;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .search-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .flight-search {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .search-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .search-field label {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .search-field input, .search-field select {
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .results-section {
+            margin-top: 20px;
+        }
+
+        .route {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .route .price {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .airline-logo {
+            width: 50px;
+            height: auto;
+        }
+
+        .filter-section {
+            width: 250px;
+            padding: 20px;
+            background: #f0f7ff;
+        }
+
+        .filter-section h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .reset {
+            float: right;
+            background: none;
+            border: none;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .filter-option {
+            margin-bottom: 15px;
+        }
+
+        .filter-option label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .apply-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Maburo.</h1>
+            <ul class="sidebtn">
+                <li><a>Home</a></li>
+                <li><a>Ticket</a></li>
+                <li><a>Schedule</a></li>
+                <li><a>History</a></li>
+                <li><a>Support</a></li>
+            </ul>
+            <a class="settings">Settings</a>
+        </nav>
+        <main class="main-content">
+            <div class="search-section">
+                <h2>Book a Flight</h2>
+                <div class="flight-search">
+                    <div class="search-field">
+                        <label>From</label>
+                        <input type="text" value="Warsaw Chopin Airport (WAW)">
+                    </div>
+                    <div class="search-field">
+                        <label>To</label>
+                        <input type="text" value="New Yogyakarta Airport (YIA)">
+                    </div>
+                    <div class="search-field">
+                        <label>Date</label>
+                        <input type="date">
+                    </div>
+                    <div class="search-field">
+                        <label>Passenger</label>
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="search-button" style="position: relative;top: 10px;left: 10px;">Search</button>
+                </div>
+            </div>
+            <div class="results-section">
+                <h3>Result</h3>
+
+                
+                <div class="route">
+                    <span>From WAW Warsaw</span>
+                    <span>4:35 PM - 1:25 PM*</span>
+                    <span class="price" style="padding-left: 200px;">€678</span>
+                    <img src="../daybfr/classic-cheese-burger-with-beef-cutlet-vegetables-onions-isolated-white-background.jpg" class="airline-logo">
+                    <span>Boeing 737 SN 44029 KO-REF</span>
+                </div>
+
+                <div class="route">
+                    <span>To YIA Yogyakarta</span>
+                    <span>10:05 AM - 12:45 PM+1</span>
+                    <span class="price">€720</span>
+                    <img src="../daybfr/classic-cheese-burger-with-beef-cutlet-vegetables-onions-isolated-white-background.jpg"  class="airline-logo">
+                    <span>Boeing 777 SN 08383 JK-AAB</span>
+                </div>
+            </div>
+        </main>
+        <aside class="filter-section">
+            <h4>Filter</h4>
+            <button class="reset">Reset</button>
+            <div class="filter-option">
+                <label>Cabin Class</label>
+                <select>
+                    <option value="all">All</option>
+                    <option value="economy" selected>Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First Class</option>
+                </select>
+            </div>
+            <div class="filter-option">
+                <label>Price</label>
+                <input type="range" min="0" max="900" value="600" id="finder">
+                <span id="val">€600 - €900</span>
+            </div>
+            <div class="filter-option">
+                <label>Departure</label>
+                <select>
+                    <option value="1">1:35 PM - 4:25 PM</option>
+                    <option value="2">10:05 AM - 11:45 PM</option>
+                </select>
+            </div>
+            <div class="filter-option">
+                <label>Airline</label>
+                <input type="checkbox" name="airline" value="garuda" checked> Garuda Indonesia<br>
+                <input type="checkbox" name="airline" value="lufthansa"> Lufthansa<br>
+                <input type="checkbox" name="airline" value="virgin"> Virgin Atlantic<br>
+            </div>
+            <button class="apply-button">Apply Filter</button>
+        </aside>
+    </div>
+    <script>
+        document.getElementById(finder).addEventListener("drag",()=>
+    {
+        const ranger=document.getElementById(finder).value;
+        document.getElementById(val).innerHTML=val;
+        
+    })
+    </script>
+</body>
+
+
+</html>
